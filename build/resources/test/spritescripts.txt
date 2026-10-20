@@ -1,0 +1,55 @@
+Test Case # 1
+Use Case: Animated Sprite
+Function being tested: Sprite is not animating on initial launch
+Initial system state: System is not started
+Input: Open system
+Expected Output: Sprite should still not be animating
+
+Test Case # 2
+Use Case: Animated Sprite
+Function being tested: Sprite is animating on initial launch since is an animating sprite
+Initial system state: System is not started
+Input: Open system
+Expected Output: Sprite is animated (frames are changing in a loop)
+
+Test Case # 3
+Use Case: Changing state of Animated Sprite
+Function being tested: Sprite's state is changed when encounters a situation where needs to stop being animated/become animated
+Initial system state: System is started
+Input: Pacman dies
+Expected Output: Pacman sprite death animation plays and Pacman is no longer visible
+
+Test Case # 4
+Use Case: Empty Sprite shows nothing
+Function being tested: Empty sprite - nothing happens in draw function
+Initial system state: Game has started
+Input: if split is not called in sprite bounds, an empty sprite is created
+Expected Output: Nothing changes with visual of sprite
+
+Test Case # 5
+Use Case: Drawn sprites show up correctly
+Function being tested: Image Sprite
+Initial system state: System is not started
+Input: Open system
+Expected Output: All expected sprites show up as expected
+
+Test Case # 6
+Use Case: All Pacman sprites correct
+Function being tested: Pacman Sprites - Pacman animated correctly
+Initial system state: Game has started
+Input: Move Pacman sprite around using arrow keys
+Expected Output: Pacman sprite changes according to which direction is pressed
+
+Test Case # 7
+Use Case: All Ghost sprites correct
+Function being tested: Pacman Sprites - Ghost sprites visually correct
+Initial system state: Game has started
+Input: Wait for ghosts to move
+Expected Output: Ghost sprite changes as their direction changes
+
+Test Case # 8
+Use Case: All other Pacman sprites correct
+Function being tested: Pacman Sprites - non-animated objects appear correctly
+Initial system state: Game is loaded
+Input: Start game
+Expected Output: All pellets and walls are inanimate

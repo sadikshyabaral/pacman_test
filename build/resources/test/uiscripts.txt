@@ -1,0 +1,78 @@
+Test Case # 1
+Use Case: Game set up
+Function being tested: Board UI visual elements
+Initial system state: System not started
+Input: Load system
+Expected Output: A square board with a black background
+
+Test Case # 2
+Use Case: Game set up
+Function being tested: Board is rendered correctly with all necessary elements
+Initial system state: System not started
+Input: Load system
+Expected Output: A board with 1 Pacman, 4 ghosts, walls, and pellets
+
+Test Case # 3
+Use Case: Game set up
+Function being tested: Board buttons are rendered (Board Panel)
+Initial system state: System not started
+Input: Load system
+Expected Output: Two buttons must show up: Start and Stop
+
+Test Case # 4
+Use Case: Moving Pacman
+Function being tested: Pacman Key Listener listens to keyboard input correctly and conducts appropriate action
+Initial system state: Game started
+Input: Move Pacman up, down, left, and right using keyboard arrow keys
+Expected Output: Pacman's location on board moves one up, down, left, or right as mapped from corresponding key pressed
+
+Test Case # 5
+Use Case: Keyboard listening
+Function being tested: System does not do any action for non-arrow keys
+Initial system state: Game started
+Input: Press non-arrow keys
+Expected Output: Nothing occurs
+
+Test Case # 6
+Use Case: Keyboard listening
+Function being tested: System does not do any action when keys are released
+Initial system state: Game started
+Input: Release an arrow key
+Expected Output: Nothing occurs
+
+Test Case # 7
+Use Case: UI Components
+Function being tested: Exiting game window
+Initial system state: Game has been loaded
+Input: Press exit button
+Expected Output: Window exits when close button is pressed
+
+Test Case # 8
+Use Case: UI Components
+Function being tested: Scoreboard is shown
+Initial system state: Game has been loaded
+Input: Start game
+Expected Output: Scoreboard is rendered correctly with starting score as 0
+
+Test Case # 9
+Use Case: UI Redrawn
+Function being tested: When game starts, the UI is redrawn to account for changes in Sprites and game status
+Initial system state: Game has been loaded
+Input: Start game and move Pacman
+Expected Output: UI is redrawn continuously to account for Pacman moving, pellets being "eaten", score going up, ghosts moving, all animated sprites
+
+Test Case # 10
+Use Case: Game over - winning case
+Function being tested: User collected all pellets ends the game
+Initial system state: Game is running
+Input: Pacman collects all pellets
+Expected Output: If win (Pacman collects all pellets), game's overall state must be indicated as game won
+                 from scenarios.md: GUI expected to have an indicator for ... the game's overall state (playing, game won, player died, ready to start the play).
+
+
+Test Case # 11
+Use Case: Game over - losing case
+Function being tested: User collides with a ghost ends the game
+Initial system state: Game is running
+Input: Pacman collides with a ghost
+Expected Output: If collide with a ghost, score becomes "You died. "

@@ -1,0 +1,33 @@
+Bug Number #1
+Initial State: Game running
+Bug Description: When a movement key is held down, the player moves
+very fast in that direction, faster than intended
+
+Bug Number #2
+Initial State:  Launcher Run but not started
+Bug Description:  When beginning the game, if the space bar is pressed, the game will start
+Expected Outcome:  The game should only start when the Start Button is pressed
+
+Bug Number #3
+Initial State: Game Running and player ending up in the position [16,16] (From Bottom Left)
+Bug Description: When Pacman is in the position stated above, The orange ghost, Clyde, will not move at all.
+
+Bug Number #4
+Initial State: Game is Running
+Bug Description: When it gets to position [8,13], the blue Ghost, Inky, will often get stuck and not move for the rest of the round
+regardless where pacman goes.
+
+Bug Number #5
+Initial State: Game is Running
+Bug Description: When the game is running, pressing tab will not allow you to move anymore, but does not stop ghosts.
+Do not press tab or you will lose!
+
+Bug Number #6
+Initial State: Game is Running
+Bug Description: Often when the game has just begun, the pink ghost pinky is much faster than the rest of the ghosts,
+Due to their design all the ghosts should share the same speed.
+
+Bug Number #7
+Initial State: Game is Running
+Bug Description: If two keys are pressed at once just before pacman is at a corner, it will glitch to the other side of the corner,
+Essentially skipping a square

@@ -1,0 +1,10 @@
+Date scripted test ran: 04/03/2025
+Ran by: Divina David
+Version 1.0
+
+Bug number: 1
+Test number: 10
+Initial state of the system: Game is running
+Steps to reproduce: Make Pacman sprite collect all pellets
+Expected outcome: Game's overall state must be indicated as game won
+Actual outcome: All sprites still animated and frozen in spot and no message shown. Neither start nor stop buttons work.
